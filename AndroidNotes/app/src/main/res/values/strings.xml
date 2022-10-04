@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AndroidNotes</string>
+    <string name="noteFile">noteFile</string>
+    <string name="encoding">UTF-8</string>
+    <string name="_2022_shambhawi_sharma">©2022, Shambhawi Sharma</string>
+    <string name="version_1_0">Version 1.0</string>
+    <string name="android_notes">Android Notes</string>
+    <string name="enter_notes">Enter notes</string>
+    <string name="enter_title">Enter title</string>
+</resources>
