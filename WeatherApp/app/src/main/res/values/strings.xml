@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Weather App</string>
+    <string name="file_name">name</string>
+    <string name="no_net">No Network Connection</string>
+</resources>
