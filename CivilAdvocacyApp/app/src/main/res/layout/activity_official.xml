@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sw"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:ignore="SpeakableTextPresentCheck">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/location_official"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:background="#B332D6"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Chicago,IL 60616" />
+
+        <TextView
+            android:id="@+id/office_data"
+            android:layout_width="159dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="136dp"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.047"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/location_official"
+            tools:text="US Senator" />
+
+        <TextView
+            android:id="@+id/namedata"
+            android:layout_width="197dp"
+            android:layout_height="62dp"
+            android:layout_marginTop="72dp"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.056"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Tammy DuckWorth" />
+
+        <TextView
+            android:id="@+id/partyID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.05"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/namedata"
+            tools:text="(Democratic Party)" />
+
+        <ImageView
+            android:id="@+id/imageID"
+            android:layout_width="176dp"
+            android:layout_height="190dp"
+            android:layout_marginTop="52dp"
+            android:onClick="openPhotoAct"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpeakableTextPresentCheck"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/logoView"
+            android:layout_width="72dp"
+            android:layout_height="61dp"
+            android:onClick="partyIcon"
+            app:layout_constraintBottom_toBottomOf="@+id/imageID"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.875"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageID"
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="SpeakableTextPresentCheck"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="112dp"
+            android:text="Address:"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logoView"
+            tools:text="Address:" />
+
+        <TextView
+            android:id="@+id/addressID"
+            android:layout_width="291dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:onClick="clickMap"
+            android:text="542 Hart Senate office builduin washington DC saifhiasf ajsofjaosf"
+            android:textAlignment="viewStart"
+            android:textColor="#FFFFFF"
+            android:textColorLink="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.13"
+            app:layout_constraintStart_toEndOf="@+id/address"
+            app:layout_constraintTop_toTopOf="@+id/address" />
+
+        <TextView
+            android:id="@+id/phoneID"
+            android:layout_width="289dp"
+            android:layout_height="23dp"
+            android:layout_marginStart="36dp"
+            android:text="(312)-666-2022"
+            android:textAlignment="viewStart"
+            android:textColor="#FFFFFF"
+            android:textColorLink="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.086"
+            app:layout_constraintStart_toEndOf="@+id/phone"
+            app:layout_constraintTop_toTopOf="@+id/phone" />
+
+        <TextView
+            android:id="@+id/emailID"
+            android:layout_width="289dp"
+            android:layout_height="23dp"
+            android:layout_marginEnd="20dp"
+            android:text="biden12134@gmail.comdsasdfasdasdas"
+            android:textAlignment="viewStart"
+            android:textColor="#FFFFFF"
+            android:textColorLink="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.937"
+            app:layout_constraintStart_toEndOf="@+id/email"
+            app:layout_constraintTop_toTopOf="@+id/email" />
+
+        <TextView
+            android:id="@+id/websiteID"
+            android:layout_width="289dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="20dp"
+            android:text="biden12134@gmail.comdsasdfasdasdasdsfsdfsdfsdfsdfsdfsd"
+            android:textAlignment="viewStart"
+            android:textColor="#FFFFFF"
+            android:textColorLink="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.937"
+            app:layout_constraintStart_toEndOf="@+id/email"
+            app:layout_constraintTop_toTopOf="@+id/website" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="48dp"
+            android:text="Phone:"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/address" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="28dp"
+            android:text="Email:"
+            android:textColor="#FFFFFF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/phone" />
+
+        <TextView
+            android:id="@+id/website"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="30dp"
+            android:text="Website:"
+            android:textColor="#FFFFFF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/email" />
+
+        <ImageView
+            android:id="@+id/facebookButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="280dp"
+            android:onClick="facebookClicked"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/facebook"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/twitterButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="280dp"
+            android:onClick="twitterClicked"
+            app:layout_constraintEnd_toStartOf="@+id/YoutubeButton"
+            app:layout_constraintHorizontal_bias="0.418"
+            app:layout_constraintStart_toEndOf="@+id/facebookButton"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/twitter"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/YoutubeButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="280dp"
+            android:layout_marginEnd="220dp"
+            android:onClick="youtubeClicked"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/youtube"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
